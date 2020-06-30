@@ -13,7 +13,7 @@ const countOnly = require('./countOnly');
 const countLetters = require('./countLetters');
 
 module.exports = {
-  head: head,
+  head,
   tail,
   middle,
   without,
