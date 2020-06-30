@@ -1,12 +1,3 @@
-const assertEqual = function (actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  }
-  if (actual !== expected) {
-    console.log(`🛑🛑🛑  Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
-
 const countOnly = function (allItems, itemsToCount) {
   let results = {}
   //go through itemsToCount and check which a true. Here's an object with all needed keys/names
@@ -33,13 +24,4 @@ const countOnly = function (allItems, itemsToCount) {
 
 
 
-
-
-const firstNames = ["Karl", "Salima", "Agouhanna", "Fang", "Fang", "Kavith", "Jason", "Salima", "Fang", "Joe"];
-
-result1 = countOnly(firstNames, { "Jason": true, "Karima": true, "Fang": true });
-
-
-assertEqual(result1["Jason"], 1);
-assertEqual(result1["Karima"], undefined);
-assertEqual(result1["Fang"], 3);
+module.exports = countOnly;
