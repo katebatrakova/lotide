@@ -12,5 +12,8 @@ const middle = function (arr) {
     let index = Math.floor(arr.length / 2);
     return [arr[index - 1], arr[index]];
   }
+
 }
+
+
 module.exports = middle;

@@ -5,7 +5,4 @@ const tail = function (array) {
   return arrayTail;
 };
 
-const result = ["Hello", "Lighthouse", "Labs"];
-console.log(tail(result))
-
 module.exports = tail;
